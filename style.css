@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo img{
+    height: 6rem;   
+}
+.navbar {
+    
+    display: flex;
+    width: 90%;
+    height: 21vh;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.navlist{
+    display: flex;
+    gap: 2.5rem;
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+}
+.hero{
+    display: flex;
+}
+.hero .left{
+    background-color:  rgba(93, 0, 0, 0.685);
+    
+}
+.hero .right{
+    background-color: rgb(210, 122, 82);
+}
+.hero .hero_split{
+    width: 50%;
+    min-height: 100vh; 
+    display: flex;  
+    align-items: center;
+}
+.navlist .slider{
+    background-color: rgba(255, 255, 255, 0.311);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top:0;
+    right: 300px;
+    border-top: 0.3rem solid rgb(58, 8, 8);
+    border-radius: 0 0 2rem 2rem;
+    backdrop-filter: blur(02.5rem);
+    z-index: -1;
+    transition: all .5s ease-in-out;
+}
+.navlist li:nth-child(2):hover ~ .slider{
+    right: 200px;
+}
+.navlist li:nth-child(3):hover ~ .slider{
+    right: 87px;
+}
+.navlist li:nth-child(4):hover ~ .slider{
+    right: -20px;
+}
+.left .content{
+    color: rgb(255, 255, 255);
+}
+.content h1{
+    font-size: 5rem;
+    -webkit-text-fill-color: rgb(232, 151, 100);
+    -webkit-text-stroke: 0.2rem rgb(62, 25, 9);
+    letter-spacing: 0.3rem;
+    font-family: Lobster Two;
+    
+}
+.content p{
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 1.3rem;
+    max-width: 85%;
+    margin: 1.4rem 0;
+    line-height: 1.5rem;
+    width: 85%;
+}
+.content button{
+    background: radial-gradient(at top left, #cdb5ac,  rgb(127, 40, 31)) ;
+    padding: 1rem 3rem;
+    border: .15rem solid rgba(68, 9, 9, 0.626);
+    font-size: 1.5rem;
+    color: azure;
+    border-radius: 4rem;
+    letter-spacing: 0.1rem;
+}
+.content button:hover {
+    background: radial-gradient(at bottom right, #cdb5ac,  rgb(127, 40, 31)) ;
+}
